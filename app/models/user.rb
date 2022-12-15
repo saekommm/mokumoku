@@ -76,4 +76,7 @@ class User < ApplicationRecord
   def allow_liked_event_notification?
     notification_timings.liked_event.present?
   end
+
+  # genderのenum
+  enum gender: { その他: 0, 男性: 1, 女性: 2 }
 end
