@@ -11,6 +11,11 @@
                 </span>
               </h5>
             </div>
+
+            <% if @event.only_woman == true %>
+              <p>女性限定</p>
+            <% end %>
+
             <h1>
               <%= @event.title %>
             </h1>
